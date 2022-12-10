@@ -147,7 +147,7 @@ int main(int argc, char* argv[])
   // Plaintext version
   helib::resetAllTimers();
   ptxt += ptxt;
-  std::cout << "Plaintext addition"
+  std::cout << "Plaintext addition";
   helib::printNamedTimer(std::cout, "addPart");
   helib::printNamedTimer(std::cout, "BluesteinFFT");
   
