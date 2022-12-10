@@ -34,7 +34,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY
 # STRINGS avoids having the 2 newline characters at the end of the string.
 # Alternatively it's possible to use file(READ ...) and then
 # string(REGEX REPLACE "\n$" "" HELIB_VERSION "${HELIB_VERSION}")
-file(STRINGS "../VERSION" HELIB_VERSION)
+file(STRINGS "VERSION" HELIB_VERSION)
 
 find_package(helib "${HELIB_VERSION}" EXACT REQUIRED)
 
