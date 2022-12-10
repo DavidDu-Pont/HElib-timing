@@ -109,15 +109,15 @@ int main(int argc, char* argv[])
   // -> [0] [1] [4] [9] [16] ... [(nslots-1)*(nslots-1)]
   helib::resetAllTimers();
   ctxt.multiplyBy(ctxt);
-  std::cout << "Cyphertext multiplication"
-  printNamedTimer(std::cout, "multiplyBy");
-  printNamedTimer(std::cout, "BluesteinFFT");
+  std::cout << "Cyphertext multiplication";
+  helib::printNamedTimer(std::cout, "multiplyBy");
+  helib::printNamedTimer(std::cout, "BluesteinFFT");
   // Plaintext version
   helib::resetAllTimers();
   ptxt.multiplyBy(ptxt);
-  std::cout << "Plaintext multiplication"
-  printNamedTimer(std::cout, "multiplyBy");
-  printNamedTimer(std::cout, "BluesteinFFT");
+  std::cout << "Plaintext multiplication";
+  helib::printNamedTimer(std::cout, "multiplyBy");
+  helib::printNamedTimer(std::cout, "BluesteinFFT");
 
   // Divide the ciphertext by itself
   // To do this we must calculate the multiplicative inverse using Fermat's
@@ -141,15 +141,15 @@ int main(int argc, char* argv[])
   // [0] [1] [1] ... [1] [1] -> [0] [2] [2] ... [2] [2]
   helib::resetAllTimers();
   ctxt += ctxt;
-  std::cout << "Cyphertext addition"
-  printNamedTimer(std::cout, "addPart");
-  printNamedTimer(std::cout, "BluesteinFFT");
+  std::cout << "Cyphertext addition";
+  helib::printNamedTimer(std::cout, "addPart");
+  helib::printNamedTimer(std::cout, "BluesteinFFT");
   // Plaintext version
   helib::resetAllTimers();
   ptxt += ptxt;
   std::cout << "Plaintext addition"
-  printNamedTimer(std::cout, "addPart");
-  printNamedTimer(std::cout, "BluesteinFFT");
+  helib::printNamedTimer(std::cout, "addPart");
+  helib::printNamedTimer(std::cout, "BluesteinFFT");
   
   // Subtract it from itself (result should be 0)
   // i.e. [0] [0] [0] [0] ... [0] [0]
