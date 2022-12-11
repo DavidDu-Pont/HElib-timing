@@ -9,6 +9,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License. See accompanying LICENSE file.
 
-add_executable(BGV_arithmetic_timing BGV_arithmetic_timing.cpp)
+add_executable(BGV_timing BGV_timing.cpp)
 
-target_link_libraries(BGV_arithmetic_timing helib)
+target_link_libraries(BGV_timing helib)

@@ -38,4 +38,4 @@ file(STRINGS "VERSION" HELIB_VERSION)
 
 find_package(helib "${HELIB_VERSION}" EXACT REQUIRED)
 
-add_subdirectory(BGV_arithmetic_timing)
+add_subdirectory(BGV_timing)
