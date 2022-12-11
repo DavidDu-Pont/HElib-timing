@@ -1,7 +1,6 @@
 ## Installation
 
-To compile, you must have HElib already installed on your system. The 
-process is pure CMake.
+To compile, you must have HElib already installed on your system.
 
 1. Create build directory:
 
