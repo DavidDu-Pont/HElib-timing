@@ -1,5 +1,3 @@
-# HElib-timing
-
 ## Installation
 
 To compile, you must have HElib already installed on your system. The 
